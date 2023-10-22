@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestionFondos</string>
+    <string name="user_name">USER</string>
+    <string name="password">PASSWORD</string>
+    <string name="startbutton">Login\n</string>
+    <string name="gotoreg">Register</string>
+    <string name="registername">Username(max 8 char)</string>
+    <string name="registermail">Mail</string>
+    <string name="registerpass">Password(max 8 char)</string>
+    <string name="registerconf">Confirm password(max 8 char)</string>
+    <string name="btnreturn">Register</string>
+    <string name="manual">User manual:</string>
+    <string name="manualextend">At the bottom you can see the following bar:</string>
+    <string name="manual1">The Belladona application is a financial management tool designed to help your company efficiently control its finances and resources. Below are the different activities of the application and how to use them:</string>
+    <string name="manual2">The Metrics activity allows you to visualize financial data in the form of charts to make informed decisions</string>
+    <string name="manual3">The Management activity allows you to generate a report in PDF format with financial information </string>
+    <string name="manual4">The Inventory activity allows you to access a table with all of the company/s products</string>
+    <string name="manual5">The Settings activity allows you to personalize the application and manage preferences.</string>
+    <string name="supportcont">Contact support via:</string>
+    <string name="metrictitle">Monthly report</string>
+    <string name="metricmonth">Month:</string>
+    <string name="btngraph">Generate report:</string>
+    <string name="managettl">Accounting Management</string>
+    <string name="mensualprofitttl">Monthly Benefit</string>
+    <string name="dailyprofitttl">Daily Benefit</string>
+    <string name="benefitcost">Benefit / Cost</string>
+    <string name="productquant">Number of products purchased / sold</string>
+    <string name="lastbuyttl">" Last product purchased"</string>
+    <string name="lastsalettl">" Last product sold"</string>
+    <string name="lastbuy">Last purchased</string>
+    <string name="lastsale">Last sold</string>
+    <string name="reportpdf">Generate PDF report</string>
+    <string name="configttl">Settings</string>
+    <string name="configclose">Sign of\n</string>
+    <string name="configinfo">About</string>
+    <string name="configalert">Notifications</string>
+    <string name="configlang">Language</string>
+</resources>

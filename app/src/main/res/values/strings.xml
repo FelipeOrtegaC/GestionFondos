@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">GestionFondos</string>
+    <string name="user_name">"USUARIO"</string>
+    <string name="password">"CONTRASEÑA"</string>
+    <string name="startbutton">Ingresar</string>
+    <string name="gotoreg">Registrarse</string>
+    <string name="registername">Nombre de usuario(maximo 8 caracteres)</string>
+    <string name="registermail">Correo</string>
+    <string name="registerpass">Contraseña(maximo 8 caracteres)</string>
+    <string name="registerconf">Confirmar contraseña(maximo 8 caracteres)</string>
+    <string name="btnreturn">Registrarse</string>
+    <string name="manual">Manual de uso:</string>
+    <string name="manualextend">En la parte inferior se observa la siguiente barra: </string>
+    <string name="manual1">La aplicación Belladona es una herramienta de gestión de contabilidad diseñada para ayudar a tu empresa a mantener un control eficiente de sus finanzas y recursos. A continuación, se detallan las diferentes actividades de la aplicación y cómo utilizarlas:</string>
+    <string name="manual2">La actividad Métricas te permite visualizar datos contables en forma de gráficos para tomar decisiones informadas</string>
+    <string name="manual3">La actividad Gestión te permite generar un reporte en formato PDF con la información contable</string>
+    <string name="manual4">La actividad Inventario te permite acceder a una tabla con todos los productos de la empresa</string>
+    <string name="manual5">La actividad Ajustes te permite personalizar la aplicación y gestionar las preferencias</string>
+    <string name="supportcont">Contacta al soporte via:</string>
+    <string name="metrictitle">Reporte mensual</string>
+    <string name="metricmonth">Mes:</string>
+    <string name="btngraph">Generar reporte:</string>
+    <string name="managettl">Gestion Contable</string>
+    <string name="mensualprofitttl">Beneficio Mensual</string>
+    <string name="mensualprofit" translatable="false">$0.000</string>
+    <string name="dailyprofitttl">Beneficio Diario</string>
+    <string name="dailyprofit" translatable="false">$0.000</string>
+    <string name="benefitcost">Beneficio / Costo</string>
+    <string name="benefit" translatable="false">$0.000</string>
+    <string name="cost" translatable="false">$0.000</string>
+    <string name="productquant">Cantidad de productos adquiridos / vendidos</string>
+    <string name="lowquant" translatable="false">00</string>
+    <string name="highquant" translatable="false">00</string>
+    <string name="lastbuyttl">Ultimo producto adquirido</string>
+    <string name="lastbuy">Ultimo adquirido</string>
+    <string name="lastsalettl">Ultimo producto vendido</string>
+    <string name="lastsale">Ultimo vendido</string>
+    <string name="reportpdf">Generar reporte PDF</string>
+    <string name="configttl">Ajustes</string>
+    <string name="configlang">Idioma</string>
+    <string name="configalert">Notificaciones</string>
+    <string name="configinfo">Acerca de</string>
+    <string name="configclose">Cerrar sesion</string>
+</resources>
