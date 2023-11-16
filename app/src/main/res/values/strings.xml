@@ -41,4 +41,14 @@
     <string name="configalert">Notificaciones</string>
     <string name="configinfo">Acerca de</string>
     <string name="configclose">Cerrar sesion</string>
+    <string name="invproduct">Productos</string>
+    <string name="invmove">Movimientos</string>
+    <string name="invcode">Codigo</string>
+    <string name="invgenerbuy">Generar Compra</string>
+    <string name="invgenersell">Generar Venta</string>
+    <string name="invname">Nombre</string>
+    <string name="invcost">Costo</string>
+    <string name="invunit">Unidades</string>
+    <string name="invbuy">Comprar</string>
+    <string name="invsell">Vender</string>
 </resources>

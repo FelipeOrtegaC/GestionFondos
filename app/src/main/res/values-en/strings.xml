@@ -36,4 +36,14 @@
     <string name="configinfo">About</string>
     <string name="configalert">Notifications</string>
     <string name="configlang">Language</string>
+    <string name="invproduct">Products</string>
+    <string name="invmove">Movements</string>
+    <string name="invcode">Code</string>
+    <string name="invgenerbuy">Purchase</string>
+    <string name="invgenersell">Sale</string>
+    <string name="invname">Name</string>
+    <string name="invcost">Cost</string>
+    <string name="invunit">Units</string>
+    <string name="invbuy">Buy</string>
+    <string name="invsell">Sell</string>
 </resources>

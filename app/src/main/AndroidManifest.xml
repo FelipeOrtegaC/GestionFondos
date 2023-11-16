@@ -42,6 +42,10 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".MovementsActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".ConfigActivity"
             android:exported="true">
         </activity>
