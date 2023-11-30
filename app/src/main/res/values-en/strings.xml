@@ -46,4 +46,6 @@
     <string name="invunit">Units</string>
     <string name="invbuy">Buy</string>
     <string name="invsell">Sell</string>
+    <string name="channel_name">" Boost your entrepreneurship"</string>
+    <string name="channel_description">What are you waiting for? Manage your dreams to make them come true soon!</string>
 </resources>

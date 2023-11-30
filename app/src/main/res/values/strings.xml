@@ -51,4 +51,6 @@
     <string name="invunit">Unidades</string>
     <string name="invbuy">Comprar</string>
     <string name="invsell">Vender</string>
+    <string name="channel_name">Impulsa tu emprendimiento</string>
+    <string name="channel_description">¿Que esperas?¡Gestiona tus sueños para materializarlos pronto!</string>
 </resources>
