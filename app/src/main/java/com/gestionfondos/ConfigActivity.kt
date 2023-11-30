@@ -8,6 +8,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.Resources
+import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
@@ -50,6 +51,11 @@ class ConfigActivity: AppCompatActivity() {
         txtnot.setOnClickListener()
         {
             sendNotification()
+        }
+
+        txtclose.setOnClickListener {
+            val intent: Intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         metricbtn.setOnClickListener {
@@ -109,10 +115,21 @@ class ConfigActivity: AppCompatActivity() {
     }
 
     private fun sendNotification(){
+        val intent = Intent(this, ConfigActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0,intent, PendingIntent.FLAG_IMMUTABLE)
+
+        val bitmap = BitmapFactory.decodeResource(applicationContext.resources, R.drawable.notifimage)
+        val bitmapLargeIcon = BitmapFactory.decodeResource(applicationContext.resources, R.drawable.logo)
+
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_launcher_foreground)
-            .setContentTitle("Impulsa tu emprendimiento")
-            .setContentText("¿Que esperas?¡Gestiona tus sueños para materializarlos pronto!")
+            .setContentTitle(getString(R.string.channel_name))
+            .setContentText(getString(R.string.channel_description))
+            .setLargeIcon(bitmapLargeIcon)
+            .setStyle(NotificationCompat.BigPictureStyle().bigPicture(bitmap))
+            .setContentIntent(pendingIntent)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
         with(NotificationManagerCompat.from(this@ConfigActivity))

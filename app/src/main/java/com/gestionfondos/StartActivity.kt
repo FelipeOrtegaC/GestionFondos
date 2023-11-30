@@ -2,6 +2,7 @@ package com.gestionfondos
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
@@ -13,7 +14,6 @@ class StartActivity: AppCompatActivity() {
         val manag : ImageButton = findViewById(R.id.imageButton8)
         val inv : ImageButton = findViewById(R.id.imageButton10)
         val confbtn : ImageButton = findViewById(R.id.imageButton11)
-
         metrics.setOnClickListener{
             val intent: Intent = Intent(this, MetricsActivity::class.java)
             startActivity(intent)
@@ -33,5 +33,5 @@ class StartActivity: AppCompatActivity() {
            startActivity(intent)
        }
 
-        }
+    }
 }
