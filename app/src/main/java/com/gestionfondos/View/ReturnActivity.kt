@@ -36,24 +36,24 @@ class ReturnActivity: AppCompatActivity() {
         val txt3 : EditText = findViewById(R.id.editTextText5)
         val txt4 : EditText = findViewById(R.id.editTextText6)
 
-        var Username :String = txt.text.toString()
-        var correo : String = txt2.text.toString()
-        var Password: String = txt3.text.toString()
-        var Password2 : String = txt4.text.toString()
 
 
         rtnhome.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
         succesfulbtn.setOnClickListener{
+            var Username :String = txt.text.toString()
+            var correo : String = txt2.text.toString()
+            var Password: String = txt3.text.toString()
+            var Password2 : String = txt4.text.toString()
+
             if (Password == Password2){
 
-                if (Username.isEmpty() && Password.isEmpty()){
+                if (Username.isNotEmpty() && Password.isNotEmpty()){
 
                     signUpUser(Username,  correo, Password)
-                    val intent: Intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
 
                 }else{
                     Toast.makeText(this@ReturnActivity, "Todos los campos deben ser llenados", Toast.LENGTH_SHORT).show()
@@ -74,6 +74,7 @@ class ReturnActivity: AppCompatActivity() {
                     val userData = UserData(id, username, correo, password)
                     databaseReference.child(id!!).setValue(userData)
                     Toast.makeText(this@ReturnActivity, "Registro, Completado!!", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@ReturnActivity, MainActivity::class.java))
                     finish()
                 }else{
                     Toast.makeText(this@ReturnActivity, "Usuario ya existe", Toast.LENGTH_SHORT).show()

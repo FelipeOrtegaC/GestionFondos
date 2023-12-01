@@ -36,14 +36,48 @@ class MainActivity : AppCompatActivity() {
         val txt2 : EditText = findViewById(R.id.editTextText2)
 
         btn.setOnClickListener {
-            val intent: Intent = Intent(this, StartActivity::class.java)
 
-            startActivity(intent)
+            val Username : String = txt.text.toString()
+            val Password : String = txt2.text.toString()
+
+
+            if (Username.isNotEmpty() && Password.isNotEmpty()){
+                logInUser(Username, Password)
+            }else{
+                Toast.makeText(this@MainActivity, "Todos los campos deben ser llenados!!", Toast.LENGTH_SHORT).show()
+            }
         }
+
         rtn.setOnClickListener{
             val intent: Intent = Intent(this, ReturnActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun logInUser(Username:String, Password:String){
+        databaseReference.orderByChild("username").equalTo(Username).addListenerForSingleValueEvent(object: ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if(snapshot.exists()){
+                    for (userSnapshot in snapshot.children){
+                        var userData = userSnapshot.getValue(UserData::class.java)
+
+                        if ((userData != null) && (userData.Password == Password)){
+                            Toast.makeText(this@MainActivity, "Inicio de sesion, Completado!!", Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this@MainActivity, StartActivity::class.java))
+                            finish()
+                        }
+                    }
+                }else{
+                    Toast.makeText(this@MainActivity, "Inicio de sesion: Errado!!", Toast.LENGTH_SHORT).show()
+
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@MainActivity, "Error en la base de datos: ${error.message}", Toast.LENGTH_SHORT).show()
+
+            }
+        })
     }
 
 }
