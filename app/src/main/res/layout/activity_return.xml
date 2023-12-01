@@ -70,9 +70,9 @@
             android:ems="10"
             android:inputType="text"
             android:textSize="16dp"
+            android:hint="@string/registername"
             android:textColor="@color/gray"
-            android:fontFamily="@font/neuemachinaregular"
-            android:text="@string/registername" />
+            android:fontFamily="@font/neuemachinaregular" />
 
         <TextView
             android:id="@+id/textView2"
@@ -99,7 +99,7 @@
             android:textSize="16dp"
             android:textColor="@color/gray"
             android:fontFamily="@font/neuemachinaregular"
-            android:text="@string/registermail" />
+            android:hint="@string/registermail" />
 
         <TextView
             android:id="@+id/textView3"
@@ -126,7 +126,7 @@
             android:textSize="16dp"
             android:textColor="@color/gray"
             android:fontFamily="@font/neuemachinaregular"
-            android:text="@string/registerpass" />
+            android:hint = "@string/registerpass" />
 
         <TextView
             android:id="@+id/textView4"
@@ -153,7 +153,7 @@
             android:textSize="16dp"
             android:textColor="@color/gray"
             android:fontFamily="@font/neuemachinaregular"
-            android:text="@string/registerconf" />
+            android:hint="@string/registerconf" />
 
         <LinearLayout
             android:layout_width="match_parent"
