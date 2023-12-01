@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "92841607969",
+    "project_id": "gestionfondosproy",
+    "storage_bucket": "gestionfondosproy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92841607969:android:1666aa230d218088e5b460",
+        "android_client_info": {
+          "package_name": "com.gestionfondos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHM3d06JnUPi4j1v7bpXx4GQd78fUX25k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
