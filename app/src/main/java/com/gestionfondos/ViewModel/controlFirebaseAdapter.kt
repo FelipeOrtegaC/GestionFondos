@@ -15,4 +15,5 @@ class controlFirebaseAdapter {
     private lateinit var databaseReference: DatabaseReference
 
 
+
 }
