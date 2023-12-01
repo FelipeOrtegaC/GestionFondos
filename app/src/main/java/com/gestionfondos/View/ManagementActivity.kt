@@ -1,9 +1,10 @@
-package com.gestionfondos
+package com.gestionfondos.View
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.gestionfondos.R
 
 class ManagementActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,10 +1,10 @@
-package com.gestionfondos
+package com.gestionfondos.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
+import com.gestionfondos.R
 
 //TEMAS DE LOGICA
 //Por temas de espacio en el mainactivity/plaintext es necesario

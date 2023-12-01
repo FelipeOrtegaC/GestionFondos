@@ -1,4 +1,4 @@
-package com.gestionfondos
+package com.gestionfondos.View
 
 import android.Manifest
 import android.app.NotificationChannel
@@ -7,7 +7,6 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.content.res.Resources
 import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
@@ -20,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import java.nio.channels.Channel
+import com.gestionfondos.R
 import java.util.Locale
 
 class ConfigActivity: AppCompatActivity() {
@@ -120,8 +119,12 @@ class ConfigActivity: AppCompatActivity() {
         }
         val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0,intent, PendingIntent.FLAG_IMMUTABLE)
 
-        val bitmap = BitmapFactory.decodeResource(applicationContext.resources, R.drawable.notifimage)
-        val bitmapLargeIcon = BitmapFactory.decodeResource(applicationContext.resources, R.drawable.logo)
+        val bitmap = BitmapFactory.decodeResource(applicationContext.resources,
+            R.drawable.notifimage
+        )
+        val bitmapLargeIcon = BitmapFactory.decodeResource(applicationContext.resources,
+            R.drawable.logo
+        )
 
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_launcher_foreground)

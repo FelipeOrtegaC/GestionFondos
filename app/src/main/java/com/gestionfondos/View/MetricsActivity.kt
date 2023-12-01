@@ -1,4 +1,4 @@
-package com.gestionfondos
+package com.gestionfondos.View
 
 import android.os.Bundle
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import com.gestionfondos.R
 
 
 class MetricsActivity: AppCompatActivity() {

@@ -1,16 +1,17 @@
-package com.gestionfondos
+package com.gestionfondos.View
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.gestionfondos.R
 
-class MovementsActivity: AppCompatActivity() {
+class InventoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_movement)
-        val movementbtn : Button = findViewById(R.id.button5)
+        setContentView(R.layout.activity_inventory)
+        val movementbtn : Button = findViewById(R.id.button6)
         val metricbtn: ImageButton = findViewById(R.id.imageButton7)
         val managbtn : ImageButton = findViewById(R.id.imageButton8)
         val homebtn : ImageButton = findViewById(R.id.imageButton9)
@@ -32,7 +33,7 @@ class MovementsActivity: AppCompatActivity() {
             startActivity(intent)
         }
         movementbtn.setOnClickListener{
-            val intent: Intent = Intent(this, InventoryActivity::class.java)
+            val intent: Intent = Intent(this, MovementsActivity::class.java)
             startActivity(intent)
         }
     }

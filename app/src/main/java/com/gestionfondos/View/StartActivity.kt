@@ -1,10 +1,10 @@
-package com.gestionfondos
+package com.gestionfondos.View
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.gestionfondos.R
 
 class StartActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
